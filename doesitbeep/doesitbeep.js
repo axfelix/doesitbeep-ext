@@ -13,7 +13,6 @@ chrome.runtime.onMessage.addListener(
                         a.add(itemName);
                         for (var product in data) {
                             var match = a.get(decodeURIComponent(data[product]["title"]));
-                            console.log(match);
                             if (match !== null) {
                                 chrome.runtime.sendMessage({"message": "open_new_tab", "url": "https://doesitbeep.com/".concat(data[product]["url"])});
                                 matched = true;
