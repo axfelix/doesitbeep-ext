@@ -36,7 +36,6 @@
   ],
   "permissions": [
     "declarativeContent",
-    "tabs",
     "activeTab",
     "https://www.nytimes.com/wirecutter/reviews/*",
     "https://doesitbeep.com/*"
